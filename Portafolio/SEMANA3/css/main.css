@@ -33,8 +33,24 @@ header nav .nav-right-section{
     align-items: center;
 }
 
-header nav .nav-right-section a{
+header nav .nav-right-section a {
     margin-right: 10px;
     color: black;
 
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('../assets/google-menu-icon-2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
 }
