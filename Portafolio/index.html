@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2</title>
+</head>
+<body>
+    <form name="miFormulario" action="">
+        <h1>Mi primer formulario de html</h1>
+        <p>
+            Nombre de usuario:
+        </p>
+        <p>
+            <input 
+                type="text" 
+                name="nombre" 
+                placeholder="Su nombre aca"
+                autocomplete="on"
+            />
+        </p>
+        <p>
+            <input 
+                type="tel" 
+                name="telefono"
+                placeholder="(+###)####-####"
+            />
+        </p>
+        <br>
+        <input 
+            type="password" 
+            name="contrasena"
+            placeholder="Contrasena"
+        />
+        <input type="hidden" value="Enviar"/>
+        <!-- Este es un comentario -->
+        <br>
+        <textarea name="comentario"
+            cols="30"
+            rows="5"
+            placeholder="Su comentario aca"
+        ></textarea>
+        <br>
+        <div><p></p></div>
+        <input 
+            type="number" 
+            placeholder="Edad" 
+            min="1" max="10"
+            />
+        <br>
+        <input 
+            type="range" 
+            step="5" 
+            max="100"
+            value="75"/>
+        <br>
+        <div><p></p></div>
+        <input type="date"/>
+        <br>
+        <input type="time" min="7:00" max="16:00"/>
+        <br>
+        <input type="datetime-local"/>
+        <br>
+        <input type="month"/>
+        <br>
+        <input type="week"/>
+        <div><p></p></div>
+        <br>
+        <div>
+            <p>
+                <input 
+                    type="radio" 
+                    name="sexo"
+                    value="H"
+                />Hombre
+                <input 
+                    type="radio" 
+                    name="sexo"
+                    value="M"
+                    checked
+                />Mujer
+            </p>
+        </div>
+        <br>
+        <input type="checkbox" value="Opcion1" checked/>Opcion 1
+        <br>
+        <input type="checkbox" value="Opcion2"/>Opcion 2
+        <br>
+        <input type="checkbox" value="Opcion3"/>Opcion 3
+        <div><p></p></div>
+        Seleccion de elementos
+        <select name="Opciones">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+        </select>
+        <br>
+        Seleccion de elementos de seleccion multiple
+        <select name="Opciones">
+            <optgroup label="Estandar">
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+            </optgroup>
+            <optgroup label="Personalizadas">
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
+            </optgroup>
+        </select>
+        Lista personalizada
+        <input type="text" list="items">
+        <datalist id="items">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+        </datalist>
+        <div><p></p></div>
+        Botones
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <input 
+            type="image" 
+            src="ninja.png" 
+            alt="Enviar"
+            width="80"
+            height="80"
+        />
+        <br>
+        <input 
+            type="submit" 
+            value="Accion personalizada"
+            formaction=""/>
+        <br>
+        <button onclick="alert('Hola mundo!')">Saludar</button>
+    </form>
+</body>
+</html>
